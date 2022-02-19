@@ -57,17 +57,25 @@ function themSo(){
 
 
     // đếm số lần xuất hiện của từng số
-    var count1 = 0; 
-    var x = numArray[i];
+    var num1 = 7; 
+    var count1 = 0;
     for(var i = 0; i < numArray.length; ++i){ 
-        if(numArray[i] == x) {
+        if(numArray[i] == num1) {
             count1++; 
+            document.getElementById("ketQuaLapLai1").innerHTML = "Số 7 xuất hiện : " + count1 ;
 
         }
     }
 
-    console.log(count);
-    document.getElementById("ketQuaLapLai1").innerHTML = count1;
+    var num1 = 9;
+    var count2 = 0;
+    for(var i = 0; i < numArray.length; ++i){ 
+        if(numArray[i] == num1) {
+            count2++; 
+            document.getElementById("ketQuaLapLai2").innerHTML = " ; Số 9 xuất hiện : " + count2 ;
+
+        }
+    }
     
 }
 
